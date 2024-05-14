@@ -12,14 +12,14 @@ const indexH1 = () => {
 
 const addPTag = () => {
   const paraEl = document.createElement("p");
-  const paraID = document.createAttribute("id");
   const paraClass = document.createAttribute("class");
-
-  paraID.value = "main-text";
-  paraEl.setAttributeNode(paraID);
+  const paraID = document.createAttribute("id");
 
   paraClass.value = "boring-text";
   paraEl.setAttributeNode(paraClass);
+
+  paraID.value = "main-text";
+  paraEl.setAttributeNode(paraID);
 
   paraEl.append("Look, I'm some text!");
 
